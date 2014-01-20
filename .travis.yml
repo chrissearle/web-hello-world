@@ -1,3 +1,10 @@
 language: java
 jdk:
   - oraclejdk7
+deploy:
+  provider: heroku
+  api_key:
+    secure: Nbg11pUhJPjRf4rxw1wBMiTm7LnT+5ZCH6baNNXsdzne8R9Q6cHu2fqfWBq/4B799HJw8onGh0bhwtiwXgUhxpggwOn7354J+QB//8RTYlFoGVl6Z/XwSMaMxrf8vUOFXG7ckReVeS6MOe5x1SPCIWHOEjPZteZlGl/+XFHANfA=
+  app: web-hello-world
+  on:
+    repo: chrissearle/web-hello-world
